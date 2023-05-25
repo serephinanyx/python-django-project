@@ -1,0 +1,124 @@
+{% extends 'societymemberapp\index.html' %}
+{% load static %}
+{% block css %}
+        <link rel="stylesheet" href="{% static 'societymemberapp\assets\css\blog.css' %}">
+{% endblock %}  
+{% block content %}     
+     <section class="content home">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <h2>All Contacts <small class="text-muted">Welcome to Digital Society</small></h2>
+                    </div>            
+                    <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                        
+                        
+                        
+                        <ul class="breadcrumb float-md-right">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="zmdi zmdi-home"></i> Digital Society</a></li>
+                                                            <li class="breadcrumb-item">App</li>
+                                                                                        <li class="breadcrumb-item active">Contact</li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">                
+                <div class="contact">
+    <div class="row clearfix">
+        <div class="col-lg-12">
+          
+        </div>           
+    </div>
+    <div class="row clearfix">
+        <div class="col-lg-12">
+            <div class="card action_bar">
+                <div class="body">
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-2 col-3">
+                           
+                                <label for="deleteall">
+                                    CONTACT_LIST
+                                </label>
+                            </div>                                
+                        </div>
+                      
+                    </div>
+                </div>                   
+            </div>
+            <div class="card">
+                <div class="body">                        
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Doctors">
+                            <div class="table-responsive">
+                                <table class="table table-hover m-b-0 c_list">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>                                    
+                                            <th>Phone</th>                                    
+                                            <th>Address</th>
+                                            <th>Block No.</th>
+                                       
+                                        </tr>
+                                    </thead>
+                                        <tbody>
+                                            {% for s in sall %}
+                                        <tr>
+                                            
+                                            <td>
+                                                <img src="{{s.pic.url}}" class="rounded-circle avatar" alt="">
+                                                <p class="c_name">{{s.id}}</p>
+                                            </td>
+                                            <td>
+                                                
+                                                <p class="c_name">{{s.firstname}}</p>
+                                            </td>
+                                            <td>
+                                                
+                                                <p class="c_name">{{s.lastname}}</p>
+                                            </td>
+                                            <td>
+                                                <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>{{s.contact_no}}</span>
+                                            </td>                                   
+                                            <td>
+                                                <address><i class="zmdi zmdi-pin"></i>{{s.address}}</address>
+                                            </td>
+                                            <td>
+                                                <address><i class="zmdi zmdi-pin"></i>{{s.block_no}}</address>
+                                            </td>
+                                            
+                                        </tr>                                        
+                                      
+                                            {% endfor %}
+                                            
+                                    </tbody>
+                                    
+
+                                </table>
+                            </div>
+                        </div>
+                                                
+                    </div>
+                </div>
+            </div>                
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="body">                            
+                    <!-- <ul class="pagination pagination-primary m-b-0">
+                        <li class="page-item"><a class="page-link" href="#"><i class="zmdi zmdi-arrow-left"></i></a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        
+                        <li class="page-item"><a class="page-link" href="#"><i class="zmdi zmdi-arrow-right"></i></a></li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </section>
+{% endblock %}

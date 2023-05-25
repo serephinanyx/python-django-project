@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-color: aqua;
+                width:100%;
+
+            }
+            table{
+                border-collapse: collapse;
+                margin: 20px;
+            }
+            tr,td,th{
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="post">
+      <table>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" placeholder="Enter FirstName:" name="firstname" required></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" placeholder="Enter  LastName:" name="lastname" required></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" placeholder="Enter  Email:" name="email" required></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio"  name="Gender" value="male" required> Male</td>
+            <td><input type="radio" name="Gender" value="female" required>Female</td>
+        </tr>
+        <tr>
+            <td>Subjects:</td>
+            <td><input type="checkbox"  name="c_hh" value="C" required> C</td>
+            <td><input type="checkbox" name="cpp_hh" value="C++" required>C++</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" placeholder="Enter  password:" name="password" required></td>
+        </tr>
+        <tr>
+            <td>Suggestion:</td>
+            <td><textarea rows="10"  cols="30" placeholder="Enter Suggestion"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="submit"></td>
+         </tr>
+
+      </table>
+      </form>
+    </body>
+</html>

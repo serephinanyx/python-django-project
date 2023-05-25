@@ -1,0 +1,68 @@
+Kalyan Jwellers 
+
+
+Enter Name : 
+Mobile Number : 
+Gender : 
+Age : 
+Product Name : 
+Qty :  30GRM    
+CURRENT PRICE : 4,829  (1 GRAM) 
+MAKING CHARGES : greater tha 10gram (increase making charges 10%)  : default making charges is 589 (10 GRAM) 
+PURCHASE AMOUNT : XXXXXXX 
+-------------------------------------------
+Male : SENIOR CITIZEN 
+
+purchase AMOUNT > 2lakh  : 10% 
+purchase AMOUNT > 5lakh  : 15% 
+purchase AMOUNT > 10lakh  : 20% 
+
+FEMale : SENIOR CITIZEN 
+
+purchase AMOUNT > 2lakh  : 15% 
+purchase AMOUNT > 5lakh  : 20% 
+purchase AMOUNT > 10lakh  : 25% 
+
+
+====================================
+Male : 
+purchase AMOUNT > 2lakh  : 5% 
+purchase AMOUNT > 5lakh  : 10% 
+purchase AMOUNT > 10lakh  : 15% 
+
+
+FEMale : 
+
+purchase AMOUNT > 2lakh  : 10% 
+purchase AMOUNT > 5lakh  : 15% 
+purchase AMOUNT > 10lakh  : 20% 
+
+
+---------------------------------------
+	INVOICE 
+
+CUSTOMER NAME : 
+Enter Name : 
+Mobile Number : 
+Gender : 
+Age : 
+Product Name : 
+Qty :  30GRM    
+CURRENT PRICE : 4,829  (1 GRAM) 
+MAKING CHARGES : charges is 589 (10 GRAM)  
+PURCHASE AMOUNT : XXXXXXX
+
+------------------------------
+DISCOUNT :  % 
+DISAMOUNT : IN RS 
+GST :      XXXX 
+------------------------
+NET AMOUNT : XXXXXXX 
+
+
+
+
+
+
+
+
